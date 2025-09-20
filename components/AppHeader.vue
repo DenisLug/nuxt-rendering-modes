@@ -7,13 +7,13 @@
       <nav class="nav">
         <a href="/" class="nav-link" :class="{ active: isActive('/') }">Home</a>
         <a href="/ssr" class="nav-link" :class="{ active: isActive('/ssr') }">SSR</a>
+        <a href="/csr" class="nav-link" :class="{ active: isActive('/csr') }">CSR</a>
         <a href="/lazy-hydrated-ssr" class="nav-link" :class="{ active: isActive('/lazy-hydrated-ssr') }"
           >Lazy Hydrated SSR</a
         >
-        <a href="/hydration-issue-ssr" class="nav-link" :class="{ active: isActive('/hydration-issue-ssr') }"
+<!--        <a href="/hydration-issue-ssr" class="nav-link" :class="{ active: isActive('/hydration-issue-ssr') }"
           >Hydration Issue SSR</a
-        >
-        <a href="/spa" class="nav-link" :class="{ active: isActive('/spa') }">SPA</a>
+        >-->
         <a href="/ssg" class="nav-link" :class="{ active: isActive('/ssg') }">SSG</a>
         <a href="/islands/islands" class="nav-link" :class="{ active: isActive('/islands/islands') }">Islands Demo</a>
         <a href="/islands/math-ssr" class="nav-link" :class="{ active: isActive('/islands/math-ssr') }"
@@ -22,12 +22,12 @@
         <a href="/islands/math-csr" class="nav-link" :class="{ active: isActive('/islands/math-csr') }"
           >Math Islands CSR</a
         >
-        <a
+<!--        <a
           href="/islands/math-no-island-ssr"
           class="nav-link"
           :class="{ active: isActive('/islands/math-no-island-ssr') }"
           >Math No Islands</a
-        >
+        >-->
       </nav>
     </div>
   </header>

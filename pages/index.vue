@@ -2,7 +2,7 @@
   <div>
     <div class="hero">
       <h1>🚀 Nuxt Rendering Modes Demo</h1>
-      <p class="hero-subtitle">Explore the differences between SSR, SPA, SSG, and Nuxt Islands</p>
+      <p class="hero-subtitle">Explore the differences between SSR, CSR, SSG, and Nuxt Islands</p>
     </div>
 
     <div class="grid">
@@ -22,8 +22,8 @@
 
       <div class="card">
         <div class="card-header">
-          <span class="badge spa">SPA</span>
-          <h3>Single Page Application</h3>
+          <span class="badge spa">CSR</span>
+          <h3>Client-Side Rendering</h3>
         </div>
         <p>App runs entirely in the browser after initial load. Smooth navigation but slower first load.</p>
         <div class="features">
@@ -31,7 +31,7 @@
           <span class="feature">🔄 Rich Interactions</span>
           <span class="feature">⚠️ SEO Challenges</span>
         </div>
-        <NuxtLink to="/spa" class="btn">View SPA Demo</NuxtLink>
+        <NuxtLink to="/csr" class="btn">View CSR Demo</NuxtLink>
       </div>
 
       <div class="card">

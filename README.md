@@ -5,7 +5,7 @@ A comprehensive demonstration of different rendering modes and performance optim
 ## ✨ Features
 
 - 🖥️ **Server-Side Rendering (SSR)** - Traditional SSR with full hydration
-- 📱 **Single Page Application (SPA)** - Client-side rendering
+- 📱 **Client-Side Rendering (CSR)** - Client-side only rendering
 - ⚡ **Static Site Generation (SSG)** - Pre-rendered static pages
 - 🏝️ **Nuxt Islands** - Selective hydration for optimal performance
 - 🔄 **Lazy Hydration** - Progressive hydration techniques
@@ -40,7 +40,7 @@ rendermodes/
 ├── pages/
 │   ├── index.vue                    # Home page with overview
 │   ├── ssr.vue                      # SSR demonstration
-│   ├── spa.vue                      # SPA demonstration
+│   ├── csr.vue                      # CSR demonstration
 │   ├── ssg.vue                      # SSG demonstration
 │   ├── lazy-hydrated-ssr.vue       # Lazy hydration demo
 │   ├── hydration-issue-ssr.vue     # Hydration problems demo
@@ -85,7 +85,7 @@ rendermodes/
 - **Features**: Server-rendered content, SEO-friendly
 - **Use Cases**: E-commerce, news sites, content-heavy applications
 
-### 📱 Single Page Application (`/spa`)
+### 📱 Client-Side Rendering (`/csr`)
 - **Mode**: Client-side rendering only
 - **Features**: Rich interactivity, smooth navigation
 - **Use Cases**: Admin dashboards, web applications, tools

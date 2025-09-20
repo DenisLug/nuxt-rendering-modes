@@ -20,9 +20,9 @@ export default defineNuxtConfig({
   routeRules: {
     "/": { prerender: false },
     "/ssr": { prerender: false },
+    "/csr": { ssr: false },
     "/lazy-hydrated-ssr": { prerender: false },
     "/hydration-issue-ssr": { prerender: false },
-    "/spa": { ssr: false },
     "/ssg": { prerender: true },
     "/islands/islands": { prerender: false },
     "/islands/math-ssr": { prerender: false },
@@ -40,7 +40,7 @@ export default defineNuxtConfig({
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
           name: "description",
-          content: "Demonstration of different rendering modes in Nuxt 3: SSR, SPA, SSG, and Islands",
+          content: "Demonstration of different rendering modes in Nuxt 3: SSR, CSR, SSG, and Islands",
         },
       ],
     },
