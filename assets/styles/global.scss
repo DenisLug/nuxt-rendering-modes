@@ -1382,6 +1382,138 @@ svg {
   }
 }
 
+// ===== MARKDOWN ISLAND STYLES =====
+.markdown-editor {
+  margin: 1.5rem 0;
+
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: $text-secondary;
+    font-size: 0.875rem;
+  }
+}
+
+.markdown-textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid $border-lighter;
+  border-radius: 6px;
+  font-family: "Courier New", monospace;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  resize: vertical;
+  transition: border-color 0.2s ease;
+  color: $text-primary;
+
+  &:focus {
+    outline: none;
+    border-color: $purple-color;
+    box-shadow: 0 0 0 3px rgba(147, 51, 234, 0.1);
+  }
+
+  &::placeholder {
+    color: $text-light;
+  }
+}
+
+.markdown-output {
+  background: $bg-light;
+  border: 1px solid $border-light;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  line-height: 1.7;
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 1.25rem 0 0.75rem 0;
+    color: $text-primary;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  h1 { font-size: 1.75rem; text-align: left; }
+  h2 { font-size: 1.4rem; }
+  h3 { font-size: 1.15rem; }
+
+  p {
+    margin: 0.75rem 0;
+    color: $text-secondary;
+  }
+
+  ul, ol {
+    margin: 0.75rem 0;
+    padding-left: 1.5rem;
+    color: $text-secondary;
+  }
+
+  li {
+    margin: 0.25rem 0;
+  }
+
+  blockquote {
+    border-left: 4px solid $purple-color;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    background: $bg-purple-light;
+    border-radius: 0 6px 6px 0;
+    color: $text-muted;
+  }
+
+  code {
+    background: $text-primary;
+    color: #f9fafb;
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.85em;
+    font-family: "Monaco", "Menlo", monospace;
+  }
+
+  pre {
+    background: $text-primary;
+    color: #f9fafb;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1rem 0;
+    font-size: 0.875rem;
+
+    code {
+      background: transparent;
+      padding: 0;
+      border-radius: 0;
+    }
+  }
+
+  strong {
+    font-weight: 700;
+    color: $text-primary;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  hr {
+    border: none;
+    border-top: 2px solid $border-light;
+    margin: 1.5rem 0;
+  }
+
+  a {
+    color: $purple-color;
+    text-decoration: underline;
+  }
+
+  .markdown-placeholder {
+    color: $text-light;
+    font-style: italic;
+  }
+}
+
 // ===== RESPONSIVE DESIGN =====
 @media (max-width: 768px) {
   .header-content {

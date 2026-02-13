@@ -28,6 +28,7 @@ export default defineNuxtConfig({
     "/islands/math-ssr": { },
     "/islands/math-csr": { ssr: false, },
     "/islands/math-no-island-ssr": { },
+    "/islands/markdown": { },
   },
 
   css: ["~/assets/styles/global.scss"],

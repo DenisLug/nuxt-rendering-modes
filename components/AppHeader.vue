@@ -22,6 +22,9 @@
         <a href="/islands/math-csr" class="nav-link" :class="{ active: isActive('/islands/math-csr') }"
           >Math Islands CSR</a
         >
+        <a href="/islands/markdown" class="nav-link" :class="{ active: isActive('/islands/markdown') }"
+          >Markdown Islands</a
+        >
 <!--        <a
           href="/islands/math-no-island-ssr"
           class="nav-link"
