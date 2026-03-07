@@ -10,6 +10,10 @@ A comprehensive demonstration of different rendering modes and performance optim
 - 🏝️ **Nuxt Islands** - Selective hydration for optimal performance
 - 🔄 **Lazy Hydration** - Progressive hydration techniques
 
+## 📊 Presentation Slides
+
+For a detailed walkthrough of these rendering modes, check out the [slides from the Vue.js Meetup Hamburg (2026-03-05)](https://github.com/DenisLug/talks/tree/main/2026-03-05%20Vue.js%20Meetup%20Hamburg).
+
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -63,6 +67,7 @@ rendermodes/
 │       ├── ManyButtonsIsland.vue    # Island: Multiple buttons
 │       ├── ManyListenersIsland.vue  # Island: Event listeners
 │       ├── MathExampleIsland.vue    # Island: Math rendering
+│       ├── MarkdownIsland.vue       # Island: Markdown editor
 │       └── SimpleIsland.server.vue  # Server-only island
 ├── plugins/
 │   ├── eventListener.client.ts      # Event tracking
@@ -115,3 +120,9 @@ rendermodes/
 - **`/islands/math-ssr`**: Math with SSR + Islands
 - **`/islands/math-csr`**: Math with client-side rendering
 - **`/islands/math-no-island-ssr`**: Math without islands architecture
+
+### Markdown Islands Demo (`/islands/markdown`)
+- **Component**: `MarkdownIsland.vue` (server-only island)
+- **Features**: Server-rendered markdown with no client-side parser
+- **Benefits**: Smaller bundle size, secure server-only code, dynamic re-rendering
+- **Technology**: Uses `markdown-it` for parsing (stays on server, never shipped to client)
